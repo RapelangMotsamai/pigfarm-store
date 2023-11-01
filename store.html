@@ -6,151 +6,158 @@
     <title>Store</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="store">
     <!-- nav -->
     <section class="nav">
         <div class="logo"></div>
         <ul class="nav_elements">
             <ul class="home"><a href="index.html">Home</a></ul>
             <ul class="store selected"><a href="store.html">Store</a></ul>
+            <ul class="store"><a href="about.html">About Us</a></ul>
+            <ul class="store"><a href="contact.html">Conctact Us</a></ul>
             <ul class="checkout_icon">
                 <div class="checkout_icon_image" onclick="show_check();"></div>
             </ul>
         </ul>
     </section>
-    
-    <!-- main-content -->
-    <!-- <div class="home_page">
-        <div class="background_concave">
-            <div class="some_message">
-                <h1>Lorem ipsum dolor sit,</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Magnam non facilis, at autem ad iure odio et 
-                    culpa sapiente quasi ipsum tenetur, quas nisi laborum 
-                    reiciendis! Voluptates animi assumenda necessitatibus?
-                </p>
-                <a href="store.html"><div class="buy_now">EXPLORE MORE</div></a>
-            </div>
-        </div>
-    </div> -->
-
+<br><br><br>
     <!-- store -->
     <div class="store_page">
         <center>
             <h1 style="color: rgba(68, 67, 67, 0.808);">PIG STORE</h1>
         </center>
-        <div class="store_row">
-            <div class="card">
+        <div class="item_of_the_week">
+            <div class="item_of_the_week_pic">
+
+            </div>
+            <div class="desc_price_everything_else">
+                <h1>Item Of The Week</h1>
+                <p>Name: Black Male Pig</p>
+                <p>Price: M3000.00</p>
+                <p>Offer ends in: 3days</p>
+            </div>
+            <div class="add_to_card_some_some">
+                <h2>Enter Card details to Buy Now</h2>
+                <center>
+                    <input type="text" placeholder="Enter Card Number" class="card_detail">
+                    <input type="text" placeholder="Name on Card" class="card_detail">
+                    <input type="text" placeholder="Expiry Date" class="card_detail">
+                    <input type="submit" class="btn1" value="Buy Now">
+                </center>
+            </div>
+        </div>
+        <br><br><h1 style="margin-left: 4.5rem; color: rgba(68, 67, 67, 0.808);">More Items</h1>
+        <div class="store_row" id="store_scroll">
+            <div class="card" id="first_offset">
                 <div class="card_image" style="background-image: url('./Pigs/1.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M7000.00</div>
-                    <div class="card_btn btn" onclick="increment(7000);">Add to Card</div>
+                    <div class="ItemName">Pietrain</div>
+                    <div class="price ">M7000.00</div>
+                    <div class="card_btn " onclick="increment(7000);">Add to Card</div>
                 </div>
             </div>
-
-
-
-
 
             <div class="card">
                 <div class="card_image"  style="background-image: url('./Pigs/2.jpeg');"></div>
                 <div class="flex">
-                    <div class="price btn">M2350.00</div>
-                    <div class="card_btn btn" onclick="increment(2350);">Add to Card</div>
+                    <div class="ItemName">Kunekune</div>
+                    <div class="price ">M2350.00</div>
+                    <div class="card_btn " onclick="increment(2350);">Add to Card</div>
                 </div>
             </div>
             <div class="card">
                 <div class="card_image"  style="background-image: url('./Pigs/3.avif');"></div>
                 <div class="flex">
-                    <div class="price btn">M1703.00</div>
-                    <div class="card_btn btn" onclick="increment(1703);">Add to Card</div>
+                    <div class="ItemName">Red Wattle</div>
+                    <div class="price ">M1703.00</div>
+                    <div class="card_btn " onclick="increment(1703);">Add to Card</div>
                 </div>
             </div>
             <div class="card">
                 <div class="card_image"  style="background-image: url('./Pigs/4.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M2300.00</div>
-                    <div class="card_btn btn" onclick="increment(2300);">Add to Card</div>
+                    <div class="ItemName">Mangalitsa</div>
+                    <div class="price ">M2300.00</div>
+                    <div class="card_btn " onclick="increment(2300);">Add to Card</div>
                 </div>
-            </div>            
-        </div>
-
-        <div class="store_row">
+            </div>
+                    
             <div class="card">
                 <div class="card_image"  style="background-image: url('./Pigs/5.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M900.00</div>
-                    <div class="card_btn btn" onclick="increment(900);">Add to Card</div>
+                    <div class="ItemName">Yorkshire</div>
+                    <div class="price ">M900.00</div>
+                    <div class="card_btn " onclick="increment(900);">Add to Card</div>
                 </div>
             </div>
-
-
-
-
 
             <div class="card">
                 <div class="card_image"  style="background-image: url('./Pigs/6.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M1100.00</div>
-                    <div class="card_btn btn" onclick="increment(1100);">Add to Card</div>
+                    <div class="ItemName">Tamworth</div>
+                    <div class="price ">M1100.00</div>
+                    <div class="card_btn " onclick="increment(1100);">Add to Card</div>
                 </div>
             </div>
             <div class="card">
                 <div class="card_image"  style="background-image: url('./Pigs/7.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M2200.00</div>
-                    <div class="card_btn btn" onclick="increment(2200);">Add to Card</div>
+                    <div class="ItemName">Landrace</div>
+                    <div class="price ">M2200.00</div>
+                    <div class="card_btn " onclick="increment(2200);">Add to Card</div>
                 </div>
             </div>
             <div class="card">
                 <div class="card_image"  style="background-image: url('./Pigs/8.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M3000.00</div>
-                    <div class="card_btn btn" onclick="increment(3000);">Add to Card</div>
+                    <div class="ItemName">Large Black</div>
+                    <div class="price">M3000.00</div>
+                    <div class="card_btn" onclick="increment(3000);">Add to Card</div>
                 </div>
             </div>            
-        </div>
 
-        <div class="store_row">
             <div class="card">
                 <div class="card_image" style="background-image: url('./Pigs/9.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M7000.00</div>
-                    <div class="card_btn btn" onclick="increment(7000);">Add to Card</div>
+                    <div class="ItemName">Hampshire</div>
+                    <div class="price ">M7000.00</div>
+                    <div class="card_btn " onclick="increment(7000);">Add to Card</div>
                 </div>
             </div>
-
-
-
-
 
             <div class="card">
                 <div class="card_image"  style="background-image: url('./Pigs/10.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M2000.00</div>
-                    <div class="card_btn btn" onclick="increment(2000);">Add to Card</div>
+                    <div class="ItemName">Gloucestershire Old Spot</div>
+                    <div class="price ">M2000.00</div>
+                    <div class="card_btn " onclick="increment(2000);">Add to Card</div>
                 </div>
             </div>
             <div class="card">
                 <div class="card_image" style="background-image: url('./Pigs/11.webp');"></div>
                 <div class="flex">
-                    <div class="price btn">M5000.00</div>
-                    <div class="card_btn btn" onclick="increment(5000);">Add to Card</div>
+                    <div class="ItemName">Duroc</div>
+                    <div class="price ">M5000.00</div>
+                    <div class="card_btn " onclick="increment(5000);">Add to Card</div>
                 </div>
             </div>
             <div class="card">
                 <div class="card_image" style="background-image: url('./Pigs/12.jpg');"></div>
                 <div class="flex">
-                    <div class="price btn">M3000.00</div>
-                    <div class="card_btn btn" onclick="increment(3000);">Add to Card</div>
+                    <div class="ItemName">Berkshire</div>
+                    <div class="price ">M3000.00</div>
+                    <div class="card_btn " onclick="increment(3000);">Add to Card</div>
                 </div>
             </div>            
         </div>
         <br>
         <br>
     </div>
-    
+
+    <div class="showers">
+        <div class="first" onclick="scroll_left()"></div>
+        <div class="sec" onclick="scroll_right()"></div>
+    </div>
 
     <!-- checkout -->
     <div id="check_menu" class="hide">

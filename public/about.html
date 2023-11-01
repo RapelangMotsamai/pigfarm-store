@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="about_body">
+    <!-- nav -->
+    <section class="nav">
+        <div class="logo"></div>
+        <ul class="nav_elements">
+            <ul class="home"><a href="index.html">Home</a></ul>
+            <ul class="store"><a href="store.html">Store</a></ul>
+            <ul class="store selected"><a href="about.html">About Us</a></ul>
+            <ul class="store"><a href="contact.html">Conctact Us</a></ul>
+            <ul class="checkout_icon">
+                <div class="checkout_icon_image" onclick="show_check();"></div>
+            </ul>
+        </ul>
+    </section>
+    <br><br><br>
+    <center>
+        <h1 class="about_us">About Us</h1>
+    </center>
+    <br>
+    <!-- about us page -->
+    <div class="aboutUs">
+        <div class="services">
+            <div class="ser_txt">
+                <h2 class="hds">Who We Are</h2>
+                <p class="inn">
+                    We are a medium-size, business passionate about pigs! 
+                    We have been breeding 
+                    and raising pigs for over 20 years. 
+                    We are dedicated to providing healthy pigs
+                    to our customers. And we believe 
+                    that our customers deserve to know where their 
+                    food comes from, and how it is raised.
+                </p>
+            </div>
+            <div class="ser_img ser_third"></div>
+        </div>
+        <div class="services">
+            <div class="ser_img ser_first"></div>
+            <div class="ser_txt">
+                <h2 class="hds">What We Do</h2>
+                <p class="inn">
+                    We specialize in breeding and raising healthy pigs, 
+                    and we sell them to customers all over 
+                    the country. We work hard to provide a high-quality 
+                    product that is ethically raised, and we strive to 
+                    create a positive, transparent experience for our 
+                    customers. 
+                </p>
+            </div>
+        </div>
+        <div class="services">
+            <div class="ser_txt">
+                <h2 class="hds">Why we do it</h2>
+                <p class="inn">
+                    We want to make a difference in the world, by providing
+                     a healthy, humane alternative to factory farming. And 
+                     we believe that by doing so, we can make a positive 
+                     impact on the lives of our customers, our animals, 
+                     and our planet.
+                </p>
+            </div>
+            <div class="ser_img ser_second"></div>
+        </div>
+    </div>
+
+    <!-- checkout -->
+    <div id="check_menu" class="hide">
+        <h3>Checkout Menu</h3>
+        <h5 id="item_number"></h5>
+        <h5 id="total_amount"></h5>
+        <div class="btn" onclick="check_out();">Checkout</div>
+    </div>
+
+    <!-- script -->
+    <script src="./script/main.js" type="text/javascript"></script>
+</body>
+</html>

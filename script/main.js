@@ -23,3 +23,22 @@ function check_out(){
     document.getElementById('item_number').innerText = "Number of Items: "+items;
     document.getElementById('total_amount').innerText = "Total: M"+total+".00";
 }
+
+function scroll_right(){
+    requestAnimationFrame(
+        function(){
+            let store = document.getElementById('store_scroll');
+            let offset = store.offsetLeft;
+            store.scrollLeft = offset + 1030;
+            console.log('fd');
+        }, 10000
+    );
+    
+}
+
+
+function scroll_left(){
+    let store = document.getElementById('store_scroll');
+    let offset = store.offsetLeft;
+    store.scrollLeft = offset - 1030;
+}
